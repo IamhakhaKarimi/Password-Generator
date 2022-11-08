@@ -1,0 +1,245 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap");
+
+
+
+:root {
+
+  --ff-main: "Karla", sans-serif;
+  --ff-serif: "Inter", sans-serif;
+}
+
+/* ---------------------- */
+/* Reset                  */
+/* ---------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+
+body {
+  font-family: var(--ff-serif);
+  color: #fff;
+  background-color: #1c1c1c;
+}
+
+h1 {
+  font-family: var(--ff-main);
+  font-weight: 800;
+  margin: 0.25em 0;
+}
+
+h2 {
+  color: #c4c9ce;
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+hr {
+  background-color: #B7520B;
+  color: #B7520B;
+  height: 2px;
+  border: none;
+}
+
+footer {
+  padding: 2em;
+}
+
+/* ---------------------- */
+/* Buttons                */
+/* ---------------------- */
+
+.btn {
+  font-size: 0.95em;
+  font-weight: 500;
+  font-family: var(--ff-serif);
+  background-color: #F69D0A;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  margin: 2em 0;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  transition: all 250ms;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #eeaf3a;
+  color: var(--clr-dark-green);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09),
+    0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09),
+    0 32px 16px rgba(0, 0, 0, 0.09);
+}
+
+/* ---------------------- */
+/* Utility classes        */
+/* ---------------------- */
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------------- */
+/* Components             */
+/* ---------------------- */
+
+main {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: min(90%, 33rem);
+  padding: 2em;
+  background-color: #891336;
+  border-radius: 0.25em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+/* Slider */
+
+#password-slider-text {
+  font-size: 0.95em;
+  color: #F69D0A;
+}
+
+#sliderNumber {
+  font-family: var(--ff-main);
+  color: #f8a31a;
+}
+ 
+
+#slider {
+  display: block;
+  margin-top: 0.5em;
+  color: #13bba4;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;  
+  background: #f0eeee;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  background: #F59E0D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #F59E0D;
+  cursor: pointer;
+}
+.slider:hover {
+  opacity: 0.8; /* Fully shown on mouse-over */
+}
+
+.title-orange {
+  color: #F59E0D ;
+}
+.supportingTitle{
+  color: white;
+}
+
+.fa-flash {
+  margin-right: 0.75em;
+}
+
+#letter-main {
+  text-transform: uppercase;
+}
+
+.downSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.generatedPassword {
+  background-color: #263548;
+  text-align: center;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  box-shadow: 1px 1px 10px #5d0c24;
+}
+
+input {
+  color: #EDE6A2;
+  background-color:#263548;
+  border: none;
+  text-align: center;
+  padding: 0;
+  font-size: 1rem;
+  max-width: 15ch;
+}
+
+input[type="text"] {
+  cursor: pointer;
+}
+
+.fa-ellipsis-h {
+  color: #fff;
+}
+
+/* footer */
+
+.attribution {
+  font-family: var(--ff-serif);
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(48, 95%, 55%);
+}
+
+/* ---------------------- */
+/* Media queries          */
+/* ---------------------- */
+
+@media (min-width: 520px) {
+  .container {
+    padding: 4em;
+  }
+
+  .downSection {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
